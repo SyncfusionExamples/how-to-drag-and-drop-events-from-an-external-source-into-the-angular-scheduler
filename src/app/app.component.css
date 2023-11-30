@@ -1,0 +1,68 @@
+.drag-sample-wrapper{
+  display: flex;
+}
+
+.treeview-external-drag #waitlist {
+  height: 50%;
+  font-weight: bold;
+  font-family: "Segoe UI";
+  font-size: 12px;
+  padding: 5px 0 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.treeview-external-drag #waitcategory {
+  height: 50%;
+  font-family: "Segoe UI";
+  font-size: 10px;
+  opacity: 0.6;
+  padding-left: 10px;
+  padding-top: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.treeview-external-drag .e-list-text {
+  border: 0.5px solid #E1E7EC;
+  height: 50px;
+  line-height: 15px;
+  padding: 0 5px;
+  width: 220px;
+}
+
+.treeview-external-drag .e-list-parent {
+  height: 100%;
+  padding: 0 2px;
+}
+
+.treeview-external-drag .e-list-item {
+  padding: 0 0 5px 0;
+}
+
+.treeview-external-drag .e-fullrow,
+.e-bigger .treeview-external-drag .e-fullrow {
+  height: 55px;
+}
+
+.treeview-external-drag .e-list-item.e-hover>.e-fullrow,
+.treeview-external-drag .e-list-item.e-active>.e-fullrow,
+.treeview-external-drag .e-list-item.e-active.e-hover>.e-fullrow {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none !important;
+}
+
+.treeview-external-drag .e-text-content {
+  padding: 0;
+  background-color: inherit;
+}
+
+.e-drag-item.e-treeview.treeview-external-drag {
+  padding: 0 !important;
+}
+
+.e-quick-popup-wrapper .e-event-popup .e-popup-header .e-subject-wrap,
+.e-drag-item.treeview-external-drag .e-icon-expandable {
+  display: none;
+}
