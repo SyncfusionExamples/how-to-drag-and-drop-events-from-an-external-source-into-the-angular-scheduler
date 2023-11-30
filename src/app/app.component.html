@@ -1,0 +1,21 @@
+<div class="drag-sample-wrapper">
+  <ejs-schedule #schedule width='85%' height='650px' 
+    [eventSettings]="eventSettings">
+    <e-views>
+      <e-view option='Week'></e-view>
+    </e-views>
+  </ejs-schedule>
+
+  <ejs-treeview #treeview [fields]='field'
+    [allowDragAndDrop]="true"
+    dragArea=".drag-sample-wrapper" 
+    (nodeDragStop)="onDragStop($event)"
+    cssClass='treeview-external-drag'>
+    <ng-template #nodeTemplate let-data>
+      <div>
+        <div id="waitlist">{{data.Name}}</div>
+        <div id="waitcategory">{{data.DepartmentName}} - {{data.Description}}</div>
+      </div>
+    </ng-template>
+  </ejs-treeview>
+</div>
